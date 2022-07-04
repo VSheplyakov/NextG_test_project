@@ -1,0 +1,237 @@
+.choose {
+  // .choose_title
+
+  &_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: $fontSecondary;
+    color: $primaryBlack;
+  }
+
+  // .choose__main
+
+  &__main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    @media (max-width: $breakpoint992) {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px;
+      gap: 60px;
+      margin-top: 80px;
+    }
+    @media (max-width: $breakpoint768) {
+      gap: 40px;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  }
+
+  // .choose__img
+
+  &__img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  // .choose__mask-img
+
+  &__mask-img {
+    @media (max-width: $breakpoint768) {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    // display: flex;
+    // width: min-content;
+
+    // // width: 100%;
+    // height: inherit;
+  }
+
+  // .choose__text
+
+  &__text {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $primaryGray;
+    margin-top: 30px;
+    @media (max-width: $breakpoint480) {
+      font-size: 15px;
+      line-height: 28px;
+      margin-top: 20px;
+    }
+  }
+
+  // .choose__wrapper
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 45px;
+    margin-top: 55px;
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 30px;
+      margin-top: 40px;
+    }
+    @media (max-width: $breakpoint480) {
+      gap: 20px;
+      margin-top: 30px;
+    }
+  }
+
+  // .choose__wrapper-blockOne
+  &__wrapper-blockOne {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 25px;
+  }
+
+  // .choose__wrapper-blockTwo
+  &__wrapper-blockTwo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 25px;
+  }
+
+  // .choose__wrapper-blockThree
+  &__wrapper-blockThree {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 25px;
+  }
+
+  // .choose__wrapper-blockFour
+  &__wrapper-blockFour {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 25px;
+  }
+
+  // .choose__wrapper-block-logo
+
+  &__wrapper-block-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background-color: $btnBlue;
+    border-radius: 100%;
+  }
+
+  // .choose__wrapper-block-text-title
+
+  &__wrapper-block-text-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: $primaryBlack;
+    @media (max-width: $breakpoint480) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  // .choose__wrapper-block-text-text
+
+  &__wrapper-block-text-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: $primaryGray;
+    @media (max-width: $breakpoint480) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+.choose__page {
+  // background-image: url('../img/choose/choose-bg.jpg');
+  background-color: $headerBg;
+
+  border-radius: 0 0 0 100px;
+}
+.choose {
+  // .choose__floor
+
+  &__floor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  // .choose__reviews
+
+  // &__reviews {
+
+  // }
+
+  // .choose__reviews-img
+
+  &__reviews-img {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+    width: 100%;
+  }
+
+  // .choose__shop
+
+  &__shop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+  }
+
+  // .choose__shop-title
+
+  &__shop-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: $fontSecondary;
+    color: $primaryBlack;
+    text-align: center;
+  }
+
+  // .choose__shop-text
+
+  &__shop-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $primaryGray;
+    text-align: center;
+  }
+}
